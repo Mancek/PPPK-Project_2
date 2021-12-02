@@ -1,0 +1,27 @@
+﻿<Window x:Class="Zadatak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Person Manager" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <ToolBar>
+                <Button x:Name="BtnPerson" Click="Btn_Click"  Content="People"></Button>
+                <Button x:Name="BtnHotel" Click="Btn_Click" Content="Hotels"></Button>
+                <Button x:Name="BtnReservation" Click="Btn_Click" Content="Reservations"></Button>
+            </ToolBar>
+        </StackPanel>
+        <Frame Grid.Row="1"
+            x:Name="Frame"
+            NavigationUIVisibility="Hidden"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>
