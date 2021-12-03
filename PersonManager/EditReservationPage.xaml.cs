@@ -63,7 +63,6 @@ namespace Zadatak
         private bool FormValid()
         {
             bool valid = true;
-            Hotel hotel = hotels.FirstOrDefault(h => h.IDHotel.Equals(int.Parse(TbHotelID.Text)));
             GridContainter.Children.OfType<TextBox>().ToList().ForEach(e =>
             {
                 if (string.IsNullOrEmpty(e.Text.Trim())
